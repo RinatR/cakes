@@ -72,23 +72,119 @@
         <p class="section-subheader">Соберите торт в 3 шага</p>
         <div class="custom-cake-steps">
           <div class="custom-cake-step">
-            <span class="custom-cake__step-number">1</span>
-            <span class="custom-cake__step_title">Выберите начинку</span>
-            <div class="custom-cake-slider">
-              <div class="custom-cake-slides">
-                <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="#" alt="">
-                  <span class="custom-cake-slide__title">Шоколадный ганаш</span>
-                  <p class="custom-cake-slide__description">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов</p>
-                  <span class="custom-cake-slide__price">1000 руб/кг</span>
+            <span class="custom-cake-step__number">1</span>
+            <span class="custom-cake-step__title">Выберите начинку</span>
+            <div class="slider">
+              <div class="slides">
+                <div class="slide">
+                  <img class="slide__image" src="#" alt="">
+                  <span class="slide__title">Шоколадный ганаш</span>
+                  <p class="slide__description">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов</p>
+                  <span class="slide__price">1000 руб/кг</span>
                 </div>
               </div>
             </div>
             <input type="button" value="Выбрать">
           </div>
-          <div class="custom_cake__step"></div>
-          <div class="custom_cake__step"></div>
+          <div class="custom-cake-step">
+            <span class="custom-cake-step__number">2</span>
+            <span class="custom-cake-step__title">Размер</span>
+            <div class="slider">
+              <div class="slides">
+                <div class="slide">
+                  <img class="slide__image" src="#" alt="">
+                  <span class="slide__title">17-18 см <br> (1кг - 6 персон)</span>
+                </div>
+              </div>
+            <input class="btn" type="button" value="Выбрать">
+          </div>
+          <div class="custom-cake-step">
+            <span class="custom-cake-step__number">3</span>
+            <span class="custom-cake-step__title">Оформление</span>
+            <div class="slider">
+              <div class="slides">
+                <div class="slide">
+                  <img class="slide__image" src="#" alt="">
+                  <span class="slide__title">Маршмэллоу</span>
+                  <span class="slide__price">600 руб/кг</span>
+                </div>
+              </div>
+            <input type="button" value="Выбрать">
+            <div class="result">
+              <h3 class="result__header">Ваш выбор</h3>
+              <form class="result-form" action="#">
+                <div class="result-form__control">
+                  <label class="result-form__label" for="filling">Начинка</label>
+                  <input class="result-form__input" id="filling" type="text" value="Шоколадный ганеш">
+                </div>
+                <div class="result-form__control">
+                  <label class="result-form__label" for="size">Размер</label>
+                  <input class="result-form__input" id="size" type="text" value="1 кг">
+                </div>
+                <div class="result-form__control">
+                  <label class="result-form__label" for="decor">Оформление</label>
+                  <input class="result-form__input" id="decor" type="text" value="Маршмэллоу">
+                </div>
+                <input class="btn" type="submit" value="Заказать торт">
+              </form>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="feedback">
+        <h2 class="section-header">Отзывы</h2>
+        <div class="feedback-slider">
+          <div class="feedback-slides">
+            <div class="feedback__slide">
+              <img class="feedback__photo" src="#" alt="">
+              <span class="feedback__name">Мария</span>
+              <span class="feedback__infor">юрист, 33 года</span>
+              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui debitis, nisi recusandae vel saepe repellendus temporibus reiciendis mollitia dolor rem expedita et architecto veritatis eos, reprehenderit aperiam? Alias, repellat.</p>
+            </div>
+            <div class="feedback__slide"></div>
+            <div class="feedback__slide"></div>
+            <div class="feedback__slide"></div>
+            <div class="feedback__slide"></div>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <h2 class="section-header">О нас</h2>
+        <div class="about-us__image">
+          <img src="#" alt="">
+        </div>
+        <div class="socials">
+          <a href="#" class="socials__icon socials__icon--instagram"></a>
+          <a href="#" class="socials__icon socials__icon--vk"></a>
+          <a href="#" class="socials__icon socials__icon--twitter"></a>
+        </div>
+        <p class="section-subheader">О кондитере</p>
+        <p>Кондитер - как призвание</p>
+        <p>Принцип - натуральные ингредиенты</p>
+        <blockquote>
+          <p>Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо</p>
+        </blockquote>
+      </section>
+      <section class="advantages">
+        <h2 class="section-header">Наши преимущества</h2>
+        <p class="section-subheader">Почему нас выбирают?</p>
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <span class="advantages__title">Без искусственных добавок</span>
+            <p class="advantages__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
+          </div>
+          <div class="advantages__item">
+            <span class="advantages__title">Свежий торт в день торжества</span>
+            <p class="advantages__text">Торты изготавливаются в течение суток до отправки</p>
+          </div>
+        </div>
+      </section>
+      <section class="customer-care">
+        <h2 class="section-header">Забота о клиента</h2>
+        <p class="section-subheader">Для нас важно</p>
+        <p class="customer-care__text">
+          Нам важно, чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события
+        </p>
       </section>
     </main>
     <footer class="page-footer"></footer>
