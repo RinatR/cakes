@@ -32,7 +32,7 @@
             <a href="#" class="page-menu__link">Контакты</a>
           </li>
         </ul>
-        <button class="page-menu__toggle" type="button" id="toggle"></button>
+        <input type="button" class="page-menu__toggle" id="toggle"></button>
       </nav>
     </header>
     <main class="page-content">
@@ -44,36 +44,36 @@
       <section class="our-cakes">
         <h2 class="section-header">Наши торты</h2>
         <div class="our-cakes__list">
-          <div class="our-cakes__item">
+          <a href="#" class="our-cakes__item">
             <span class="our-cakes__type">Классические</span>
             <span class="our-cakes__amount">24 вида</span>
             <img class="our-cakes__image" src="img/cake1.jpg" alt="Классические" width="150" height="150">
-          </div>
-          <div class="our-cakes__item">
+          </a>
+          <a href="#" class="our-cakes__item">
             <span class="our-cakes__type">Муссовые</span>
             <span class="our-cakes__amount">12 видов</span>
             <img class="our-cakes__image" src="img/cake1.jpg" alt="Муссовые" width="150" height="150">
-          </div>
-          <div class="our-cakes__item">
+          </a>
+          <a href="#" class="our-cakes__item">
             <span class="our-cakes__type">Свадебные</span>
             <span class="our-cakes__amount">20 видов</span>
             <img class="our-cakes__image" src="img/cake3.jpg" alt="Свадебные" width="150" height="150">
-          </div>
-          <div class="our-cakes__item">
+          </a>
+          <a href="#" class="our-cakes__item">
             <span class="our-cakes__type">Мужчинам</span>
             <span class="our-cakes__amount">12 видов</span>
             <img class="our-cakes__image" src="img/cake4.jpg" alt="Мужчинам" width="150" height="150">
-          </div>
-          <div class="our-cakes__item">
+          </a>
+          <a href="#" class="our-cakes__item">
             <span class="our-cakes__type">Женщинам</span>
             <span class="our-cakes__amount">16 видов</span>
             <img class="our-cakes__image" src="img/cake5.jpg" alt="Женские" width="150" height="150">
-          </div>
-          <div class="our-cakes__item">
+          </a>
+          <a href='#' class="our-cakes__item">
             <span class="our-cakes__type">Детские</span>
             <span class="our-cakes__amount">18 видов</span>
             <img class="our-cakes__image" src="img/cake6.jpg" alt="Детские" width="150" height="150">
-          </div>
+          </a>
         </div>
       </section>
       <section class="custom-cake">
@@ -83,42 +83,43 @@
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">1</span>
             <span class="custom-cake-step__title">Выберите начинку</span>
-            <div class="slider">
-              <div class="slides">
-                <div class="slide">
-                  <img class="slide__image" src="#" alt="">
-                  <span class="slide__title">Шоколадный ганаш</span>
-                  <p class="slide__description">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов</p>
-                  <span class="slide__price">1000 руб/кг</span>
+            <div class="custom-cake-slider">
+              <div class="custom-cake-slides">
+                <div class="custom-cake-slide">
+                  <img class="custom-cake-slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
+                  <span class="custom-cake-slide__title">Шоколадный ганаш</span>
+                  <p class="custom-cake-slide__description">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                  <span class="custom-cake-slide__price">1000 руб/кг</span>
                 </div>
               </div>
             </div>
-            <input type="button" value="Выбрать">
+            <input class="btn" type="button" value="Выбрать">
           </div>
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">2</span>
             <span class="custom-cake-step__title">Размер</span>
-            <div class="slider">
-              <div class="slides">
-                <div class="slide">
-                  <img class="slide__image" src="#" alt="">
-                  <span class="slide__title">17-18 см <br> (1кг - 6 персон)</span>
+            <div class="custom-cake-slider">
+              <div class="custom-cake-slides">
+                <div class="custom-cake-slide">
+                  <img class="custom-cake-slide__image custom-cake-slide__image--size" src="img/size1.svg" alt="1кг">
+                  <span class="custom-cake-slide__title custom-cake-slide__title--size">17-18 см <br> (1кг - 6 персон)</span>
                 </div>
               </div>
-            <input class="btn" type="button" value="Выбрать">
+              <input class="btn" type="button" value="Выбрать">
+            </div>
           </div>
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">3</span>
             <span class="custom-cake-step__title">Оформление</span>
-            <div class="slider">
-              <div class="slides">
-                <div class="slide">
-                  <img class="slide__image" src="#" alt="">
-                  <span class="slide__title">Маршмэллоу</span>
-                  <span class="slide__price">600 руб/кг</span>
+            <div class="custom-cake-slider">
+              <div class="custom-cake-slides">
+                <div class="custom-cake-slide">
+                  <img class="custom-cake-slide__image" src="img/decor.jpg" alt="Оформление">
+                  <span class="custom-cake-slide__title custom-cake-slide__title--decor">Маршмэллоу</span>
+                  <span class="custom-cake-slide__price custom-cake-slide__title--decor">600 руб/кг</span>
                 </div>
               </div>
-            <input type="button" value="Выбрать">
+            <input class="btn" type="button" value="Выбрать">
             <div class="result-cake">
               <h3 class="result-cake__header">Ваш выбор</h3>
               <form class="result-cake-form" action="#">
