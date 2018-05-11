@@ -82,14 +82,12 @@
         <div class="custom-cake-steps">
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">1</span>
-            <span class="custom-cake-step__title">Выберите начинку</span>
+            <span class="custom-cake-step__title">Выберите размер</span>
             <div class="custom-cake-slider">
               <div class="custom-cake-slides">
                 <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
-                  <span class="custom-cake-slide__title">Шоколадный ганаш</span>
-                  <p class="custom-cake-slide__description">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
-                  <span class="custom-cake-slide__price">1000 руб/кг</span>
+                  <img class="custom-cake-slide__image" src="img/size1.svg" alt="1кг">
+                  <span class="custom-cake-slide__title">17-18 см <br> (1кг - 6 персон)</span>
                 </div>
               </div>
             </div>
@@ -97,48 +95,50 @@
           </div>
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">2</span>
-            <span class="custom-cake-step__title">Размер</span>
+            <span class="custom-cake-step__title">Выберите начинку</span>
             <div class="custom-cake-slider">
               <div class="custom-cake-slides">
                 <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image custom-cake-slide__image--size" src="img/size1.svg" alt="1кг">
-                  <span class="custom-cake-slide__title custom-cake-slide__title--size">17-18 см <br> (1кг - 6 персон)</span>
+                  <img class="custom-cake-slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
+                  <span class="custom-cake-slide__title">Шоколадный ганаш</span>
+                  <span class="custom-cake-slide__price">1000 руб/кг</span>
                 </div>
               </div>
-              <input class="btn" type="button" value="Выбрать">
             </div>
+            <input class="btn" type="button" value="Выбрать">
           </div>
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">3</span>
-            <span class="custom-cake-step__title">Оформление</span>
+            <span class="custom-cake-step__title">Выберите оформление</span>
             <div class="custom-cake-slider">
               <div class="custom-cake-slides">
                 <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="img/decor.jpg" alt="Оформление">
-                  <span class="custom-cake-slide__title custom-cake-slide__title--decor">Маршмэллоу</span>
-                  <span class="custom-cake-slide__price custom-cake-slide__title--decor">600 руб/кг</span>
+                  <img class="custom-cake-slide__image" src="img/cake1.jpg" width="150" height="150" alt="Оформление">
+                  <span class="custom-cake-slide__title">Маршмэллоу</span>
+                  <span class="custom-cake-slide__price">600 руб/кг</span>
                 </div>
               </div>
-            <input class="btn" type="button" value="Выбрать">
-            <div class="result-cake">
-              <h3 class="result-cake__header">Ваш выбор</h3>
-              <form class="result-cake-form" action="#">
-                <div class="result-cake-form__control">
-                  <label class="result-cake-form__label" for="filling">Начинка</label>
-                  <input class="result-cake-form__input" id="filling" type="text" value="Шоколадный ганеш">
-                </div>
-                <div class="result-cake-form__control">
-                  <label class="result-cake-form__label" for="size">Размер</label>
-                  <input class="result-cake-form__input" id="size" type="text" value="1 кг">
-                </div>
-                <div class="result-cake-form__control">
-                  <label class="result-cake-form__label" for="decor">Оформление</label>
-                  <input class="result-cake-form__input" id="decor" type="text" value="Маршмэллоу">
-                </div>
-                <input class="btn" type="submit" value="Заказать торт">
-              </form>
             </div>
+            <input class="btn" type="button" value="Выбрать">
           </div>
+        </div>
+        <div class="result-cake">
+          <h3 class="result-cake__header">Ваш выбор</h3>
+          <form class="result-cake-form" action="#">
+            <div class="result-cake-form__control">
+              <label class="result-cake-form__label" for="size">Размер</label>
+              <input class="result-cake-form__input" id="size" type="text" value="1 кг" disabled>
+            </div>
+            <div class="result-cake-form__control">
+              <label class="result-cake-form__label" for="filling">Начинка</label>
+              <input class="result-cake-form__input" id="filling" type="text" value="Шоколадный ганаш" disabled>
+            </div>
+            <div class="result-cake-form__control">
+              <label class="result-cake-form__label" for="decor">Оформление</label>
+              <input class="result-cake-form__input" id="decor" type="text" value="Маршмэллоу" disabled>
+            </div>
+            <input class="btn" type="submit" value="Заказать торт">
+          </form>
         </div>
       </section>
       <section class="feedback">
