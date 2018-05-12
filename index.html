@@ -83,11 +83,29 @@
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">1</span>
             <span class="custom-cake-step__title">Выберите размер</span>
-            <div class="custom-cake-slider">
-              <div class="custom-cake-slides">
-                <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="img/size1.svg" alt="1кг">
-                  <span class="custom-cake-slide__title">17-18 см <br> (1кг - 6 персон)</span>
+            <div class="slider">
+              <input class="slider__control" type="radio" id="slider-btn-1" name="slider-toggle" checked>
+              <input class="slider__control" type="radio" id="slider-btn-2" name="slider-toggle">
+              <input class="slider__control" type="radio" id="slider-btn-3" name="slider-toggle">
+              <div class="slider__toggles">
+                <label class="slider__toggle slider__toggle--prev" for="slider-btn-1"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-2"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-3"></label>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__slides">
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/size1.svg" alt="1кг">
+                    <span class="slide__title">17-18 см <br> (1кг - 6 персон)</span>
+                  </div>
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/size1.svg" alt="1кг">
+                    <span class="slide__title">17-18 см <br> (2кг - 8 персон)</span>
+                  </div>
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/size1.svg" alt="1кг">
+                    <span class="slide__title">17-18 см <br> (3кг - 10 персон)</span>
+                  </div>
                 </div>
               </div>
             </div>
