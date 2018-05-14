@@ -114,12 +114,27 @@
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">2</span>
             <span class="custom-cake-step__title">Выберите начинку</span>
-            <div class="custom-cake-slider">
-              <div class="custom-cake-slides">
-                <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
-                  <span class="custom-cake-slide__title">Шоколадный ганаш</span>
-                  <span class="custom-cake-slide__price">1000 руб/кг</span>
+            <div class="slider">
+              <input class="slider__control" type="radio" id="slider-btn-1" name="slider-toggle" checked>
+              <input class="slider__control" type="radio" id="slider-btn-2" name="slider-toggle">
+              <input class="slider__control" type="radio" id="slider-btn-3" name="slider-toggle">
+              <div class="slider__toggles">
+                <label class="slider__toggle slider__toggle--prev" for="slider-btn-1"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-2"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-3"></label>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__slides">
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
+                    <span class="slide__title">Шоколадный ганаш</span>
+                    <span class="slide__price">1000 руб/кг</span>
+                  </div>
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/order-slide.jpg" alt="Шоколадный ганаш">
+                    <span class="slide__title">Бисквит</span>
+                    <span class="slide__price">800 руб/кг</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -128,12 +143,22 @@
           <div class="custom-cake-step">
             <span class="custom-cake-step__number">3</span>
             <span class="custom-cake-step__title">Выберите оформление</span>
-            <div class="custom-cake-slider">
-              <div class="custom-cake-slides">
-                <div class="custom-cake-slide">
-                  <img class="custom-cake-slide__image" src="img/cake1.jpg" width="150" height="150" alt="Оформление">
-                  <span class="custom-cake-slide__title">Маршмэллоу</span>
-                  <span class="custom-cake-slide__price">600 руб/кг</span>
+            <div class="slider">
+              <input class="slider__control" type="radio" id="slider-btn-1" name="slider-toggle" checked>
+              <input class="slider__control" type="radio" id="slider-btn-2" name="slider-toggle">
+              <input class="slider__control" type="radio" id="slider-btn-3" name="slider-toggle">
+              <div class="slider__toggles">
+                <label class="slider__toggle slider__toggle--prev" for="slider-btn-1"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-2"></label>
+                <label class="slider__toggle slider__toggle--next" for="slider-btn-3"></label>
+              </div>
+              <div class="slider__inner">
+                <div class="slider__slides">
+                  <div class="slider__slide slide">
+                    <img class="slide__image" src="img/cake1.jpg" width="150" height="150" alt="Оформление">
+                    <span class="slide__title">Маршмэллоу</span>
+                    <span class="slide__price">600 руб/кг</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,18 +186,37 @@
       </section>
       <section class="feedback">
         <h2 class="section-header">Отзывы</h2>
-        <div class="feedback-slider">
-          <div class="feedback-slides">
-            <div class="feedback__slide">
-              <img class="feedback__photo" src="#" alt="">
-              <span class="feedback__name">Мария</span>
-              <span class="feedback__infor">юрист, 33 года</span>
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui debitis, nisi recusandae vel saepe repellendus temporibus reiciendis mollitia dolor rem expedita et architecto veritatis eos, reprehenderit aperiam? Alias, repellat.</p>
+        <div class="slider slider--feedback">
+          <input class="slider__control" type="radio" id="slider-btn-1" name="slider-toggle" checked>
+          <input class="slider__control" type="radio" id="slider-btn-2" name="slider-toggle">
+          <input class="slider__control" type="radio" id="slider-btn-3" name="slider-toggle">
+          <div class="slider__toggles">
+            <label class="slider__toggle slider__toggle--prev" for="slider-btn-1"></label>
+            <label class="slider__toggle slider__toggle--next" for="slider-btn-2"></label>
+            <label class="slider__toggle slider__toggle--next" for="slider-btn-3"></label>
             </div>
-            <div class="feedback__slide"></div>
-            <div class="feedback__slide"></div>
-            <div class="feedback__slide"></div>
-            <div class="feedback__slide"></div>
+          <div class="slider__inner">
+            <div class="slider__slides">
+              <div class="slider__slide slide slide--feedback">
+              <img class="slide__image" src="img/feedback-photo.png" alt="Мария, юрист" width="59" height="59">
+              <span class="slide__title">Мария</span>
+              <span class="slide__info">юрист, 33 года</span>
+              <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui debitis, nisi recusandae vel saepe repellendus temporibus reiciendis mollitia dolor rem expedita et architecto veritatis eos, reprehenderit aperiam? Alias, repellat.</p>
+              </div>
+              <div class="slider__slide slide slide--feedback">
+                <img class="slide__photo" src="#" alt="">
+                <span class="slide__name">Мария</span>
+                <span class="slide__info">юрист, 33 года</span>
+                <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui debitis, nisi recusandae vel saepe repellendus temporibus reiciendis mollitia dolor rem expedita et architecto veritatis eos, reprehenderit aperiam? Alias, repellat.</p>
+              </div>
+              <div class="slider__slide slide slide--feedback">
+                <img class="slide__photo" src="#" alt="">
+                <span class="slide__name">Мария</span>
+                <span class="slide__info">юрист, 33 года</span>
+                <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui debitis, nisi recusandae vel saepe repellendus temporibus reiciendis mollitia dolor rem expedita et architecto veritatis eos, reprehenderit aperiam? Alias, repellat.</p>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </section>

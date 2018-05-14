@@ -14,5 +14,70 @@
 }
 
 
+.sliding(@params) when (@params = "240") {
+   &:first-child {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slider {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slides {
+          transform: translateX(-240px);
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slides {
+          transform: translateX(-480px);
+        }
+      }
+    }
+  }
+}
+
+.sliding(@params) when (@params = "280") {
+   &:first-child {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slider {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slides {
+          transform: translateX(-280px);
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &:checked {
+      ~ .slider__inner {
+        .slider__slides {
+          transform: translateX(-560px);
+        }
+      }
+    }
+  }
+}
+
+
 
 
