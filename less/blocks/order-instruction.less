@@ -1,0 +1,43 @@
+.order-instruction {
+  padding: 0 30px;
+  padding-top: 37px;
+  padding-bottom: 148px;
+  font-family: "Varela", "Arial", sans-serif;
+  font-size: 15px;
+  background-color: #e3353d;
+  background-image: url("../img/order-instruction-box-img.png");
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  color: #ffffff;
+}
+
+.order-instruction__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: numbers;
+}
+
+.order-instruction__item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 23px;
+
+  &:before {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    font-family: "Playfair Display", "PT Serif", serif;
+    font-size: 35px;
+    font-weight: bold;
+    counter-increment: numbers;
+    content: counter(numbers);
+  }
+}
+
+.order-instruction__title {
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+
